@@ -12,3 +12,17 @@ img,
 video {
   display: block;
 }
+
+:root {
+  --accent-color: rgba(154, 24, 42, 1);
+  --background-color: rgba(240, 240, 240, 1);
+  --black: rgba(0, 0, 0, 1);
+  --accent-hover: rgba(115, 0, 16, 1);
+  --accent-2-color: rgba(193, 163, 55, 1);
+  --black-half-opacity: rgba(0, 0, 0, 0.5);
+  --grey: rgba(102, 102, 102, 1);
+  --textbox: rgba(204, 204, 204, 1);
+  --texte: rgba(38, 38, 38, 1);
+  --transparent: rgba(217, 217, 217, 0);
+  --white: rgba(255, 255, 255, 1);
+}
