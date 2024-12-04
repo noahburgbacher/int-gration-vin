@@ -80,15 +80,12 @@ header {
   transition: transform 1s ease;
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  padding: 300px 100px;
   align-items: center;
   justify-content: space-between;
+  gap: 60px;
 }
 .burger_menu.is-active {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--accent-color);
-  position: fixed;
   transform: translateX(0px);
 }
 
