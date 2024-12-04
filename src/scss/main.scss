@@ -51,6 +51,7 @@ body {
   color: var(--texte);
   background-color: var(--background-color);
   font-size: 16px;
+  overflow-x: hidden;
 }
 // Header
 header {
@@ -261,4 +262,27 @@ header {
 .carte-vertical {
   gap: 25px;
   padding: 0px 0px 50px 0px;
+}
+
+.invitation {
+  background: url(../img/dégustation.webp) lightgray 50% / cover no-repeat;
+  width: 100vw;
+  margin-left: calc((100vw - 100%) / -2);
+  height: 600px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadre {
+  border-radius: 50px;
+  background: var(--black-half-opacity, rgba(0, 0, 0, 0.5));
+  backdrop-filter: blur(8px);
+  padding: 15px 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.white {
+  color: var(--white);
 }
