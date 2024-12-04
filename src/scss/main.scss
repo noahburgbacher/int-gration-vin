@@ -187,11 +187,20 @@ header {
   gap: 10px;
   color: var(--white, #fff);
   text-align: center;
+  transition: background-color 0.5s ease-in-out;
 }
-.marginb300 {
-  margin-bottom: 300px;
+.bouton:hover {
+  background: var(--accent-hover);
 }
-
+.z-5 {
+  z-index: -5;
+}
+.bottle {
+  height: 300px;
+  width: auto;
+  z-index: -5;
+  transform: scale(2.5) translateX(15px) translateY(-60px);
+}
 .img-nos-vins {
   height: 589px;
   background: url(../img/wine\ mockup\ red.webp) lightgray 50% / cover no-repeat;
