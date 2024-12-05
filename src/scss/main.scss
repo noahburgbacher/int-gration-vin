@@ -46,6 +46,17 @@ video {
 //   background-color: rgba(86, 61, 124, 0.15);
 //   border: 1px solid rgba(86, 61, 124, 0.2);
 // }
+.loader {
+  position: fixed;
+  background-color: var(--accent-color);
+  width: 100vw;
+  height: 100vh;
+  transition: transform 1s;
+  z-index: 500;
+}
+.hidden {
+  transform: translatex(101vw);
+}
 body {
   font-family: Basic Sans;
   color: var(--texte);
