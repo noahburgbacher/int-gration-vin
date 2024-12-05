@@ -306,3 +306,32 @@ header {
 .white {
   color: var(--white);
 }
+
+.footer {
+  height: 280px;
+  margin-top: 150px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 38px 24px 28px 24px;
+  * {
+    width: calc((100vw - 312px) / 6);
+  }
+}
+
+.Gault {
+  width: 100px;
+  height: 75px;
+  flex-shrink: 0;
+  background: url(../img/Gault&Millau\ logo.jpg) lightgray 50% / cover no-repeat;
+}
+
+.biosuisse {
+  width: 87.862px;
+  height: 70px;
+  flex-shrink: 0;
+  background: url(../img/biosuisse\ logo.jpg) lightgray -12.069px 0px / 134.093%
+    100% no-repeat;
+  mix-blend-mode: multiply;
+}
