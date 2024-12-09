@@ -103,7 +103,8 @@ header {
 }
 
 .burger {
-  z-index: 5;
+  z-index: 50;
+
   transform: translateY(-10px);
   .close {
     position: absolute;
@@ -145,6 +146,7 @@ header {
 }
 
 .menu_burger {
+  z-index: 50;
   display: flex;
   width: 682px;
   align-items: center;
@@ -330,4 +332,45 @@ header {
   background: url(../img/biosuisse\ logo.jpg) lightgray -12.069px 0px / 134.093%
     100% no-repeat;
   mix-blend-mode: multiply;
+}
+
+// page détail du vin
+h1 {
+  text-align: center;
+  color: var(--accent-color);
+  font-size: 100px;
+  font-family: Tarif;
+  letter-spacing: -1.28px;
+  font-weight: 400;
+}
+.detail_vin {
+  border-radius: 120px;
+  background-color: var(--white);
+  overflow: hidden;
+  margin: 90px auto 150px;
+}
+.vin_image {
+  width: 110%;
+  height: 100%;
+  background-image: url(../img/wine\ mockup\ red.webp);
+  background-position: center;
+  background-size: cover;
+}
+.liste {
+  .row {
+    .col-4 {
+      height: 53px;
+
+      color: var(--accent-color);
+      margin: 0 0 30px 0;
+    }
+    .col-8 {
+      margin: 0 0 30px 0;
+    }
+  }
+}
+
+.ajouter_au_panier {
+  width: 100%;
+  margin: 30px 0px;
 }
