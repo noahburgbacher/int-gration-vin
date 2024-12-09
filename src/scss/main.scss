@@ -203,11 +203,9 @@ header {
 .bouton:hover {
   background: var(--accent-hover);
 }
-.z-5 {
-  z-index: -5;
-}
 .bottle {
   height: 300px;
+  position: static;
   width: auto;
   z-index: -5;
   transform: scale(2.5) translateX(15px) translateY(-60px);
@@ -221,13 +219,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   border-radius: 120px;
   overflow: hidden;
   background-color: var(--white);
   padding: 0px;
   gap: 10px;
-
   margin-bottom: 150px;
 }
 
