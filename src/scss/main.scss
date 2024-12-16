@@ -374,20 +374,23 @@ h1 {
   width: 100%;
   margin: 50px 0px;
 }
-
 .ruisseau {
   position: absolute;
   transform: translateY(-50px);
   z-index: -15;
 }
-
 .inverse {
   transform: scaleX(-1) translateY(-100px);
 }
-
 .ty-100 {
   transform: translateY(-100px);
 }
+.ty-200 {
+  transform: translateY(-200px);
+}
 .ty50 {
   transform: scaleX(-1) translateY(50px);
+}
+.txrui {
+  transform: translateX(-1100px);
 }
