@@ -19,7 +19,6 @@ video {
   --background-color: rgba(240, 240, 240, 1);
   --black: rgba(0, 0, 0, 1);
   --accent-hover: rgba(115, 0, 16, 1);
-  --accent-2-color: rgba(193, 163, 55, 1);
   --black-half-opacity: rgba(0, 0, 0, 0.5);
   --grey: rgba(102, 102, 102, 1);
   --textbox: rgba(204, 204, 204, 1);
@@ -27,7 +26,10 @@ video {
   --transparent: rgba(217, 217, 217, 0);
   --white: rgba(255, 255, 255, 1);
 }
-
+.versiondeux {
+  --accent-color: rgba(193, 163, 55, 1);
+  --accent-hover: rgb(159, 134, 42);
+}
 // .row + .row {
 //   margin-top: 16px;
 // }
@@ -404,6 +406,13 @@ h1 {
   width: 110%;
   height: 100%;
   background-image: url(../img/wine\ mockup\ red.webp);
+  background-position: center;
+  background-size: cover;
+}
+.vin_image_jaune {
+  width: 110%;
+  height: 100%;
+  background-image: url(../img/wine\ mockup.webp);
   background-position: center;
   background-size: cover;
 }
