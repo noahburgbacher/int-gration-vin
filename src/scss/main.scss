@@ -207,10 +207,13 @@ header {
 }
 .bottle {
   height: 300px;
-  position: static;
+  position: absolute;
   width: auto;
   z-index: -5;
-  transform: scale(2.5) translateX(15px) translateY(-60px);
+  transform: scale(2.5) translateX(15px) translateY(-180px);
+}
+.margeboutonnosvins {
+  margin-bottom: 300px;
 }
 .img-nos-vins {
   height: 589px;
@@ -306,19 +309,50 @@ header {
 }
 
 .footer {
-  height: 280px;
   margin-top: 150px;
   background-color: var(--white);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
   padding: 38px 24px 28px 24px;
-  * {
-    width: calc((100vw - 312px) / 6);
-  }
+}
+.reseausociaux {
+  display: flex;
+  gap: 20px;
+}
+.s-ntext {
+  color: var(--accent-color);
+}
+.vente-titre {
+  font-size: 24px;
+}
+.submit {
+  margin-top: 9px;
+  display: flex;
+  margin-bottom: 36px;
+}
+.inscription {
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: var(--white);
+  border-radius: 10px;
+  transform: translateX(-30px);
+}
+
+.email {
+  padding: 10px 20px;
+  background-color: var(--textbox);
+  max-width: 100%;
+  min-width: 300px;
+  border-radius: 10px;
+  color: grey;
+}
+.GMBio {
+  display: flex;
 }
 
 .Gault {
+  transform: translateX(-18px);
   width: 100px;
   height: 75px;
   flex-shrink: 0;
@@ -332,6 +366,23 @@ header {
   background: url(../img/biosuisse\ logo.jpg) lightgray -12.069px 0px / 134.093%
     100% no-repeat;
   mix-blend-mode: multiply;
+}
+
+.langues-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: gray;
+}
+.fr {
+  color: black;
+  text-decoration: underline black 1px;
+}
+
+.cookie-donnée {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 // page détail du vin
