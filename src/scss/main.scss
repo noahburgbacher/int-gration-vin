@@ -433,10 +433,41 @@ h1 {
   }
 }
 
+.boutonquantity {
+  border-radius: 10px;
+  background: var(--accent-color);
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--white, #fff);
+  text-align: center;
+  transition: background-color 0.5s ease-in-out;
+}
+
 .ajouter_au_panier {
   width: 100%;
   margin: 50px 0px;
+  overflow: hidden;
 }
+
+.bouton.quantity-controls {
+  padding: 0%;
+  border: none;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  border-radius: 0%;
+  font-size: 20px;
+  background-color: var(--accent-color);
+}
+
+.bouton.quantity-controls .quantite {
+  min-width: 30px;
+  text-align: center;
+}
+
 .ruisseau {
   position: absolute;
   transform: translateY(-50px);
