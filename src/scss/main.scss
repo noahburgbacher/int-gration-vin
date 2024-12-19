@@ -80,16 +80,36 @@ header {
   justify-content: center;
   gap: 46px;
   a {
+    z-index: 0;
     text-decoration: none;
+    position: relative;
   }
-  a:hover {
-    text-decoration: underline;
+  a::after {
+    content: "";
+    display: inline-block;
+
+    height: 1em;
+    width: 100%;
+    border-bottom: 2px solid;
+
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1) translateY(-15px);
+  }
+
+  a:hover::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1) translateY(-20px);
   }
 }
 
 // burger menu
 
 .burger_menu {
+  z-index: 5;
   width: 100vw;
   height: 100vh;
   background-color: var(--accent-color);
@@ -168,7 +188,7 @@ header {
   }
 
   .burger_column div {
-    height: 25px;
+    height: 30px;
   }
   .burger_column div a {
     text-decoration: none;
