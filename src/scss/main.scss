@@ -82,6 +82,9 @@ header {
   a {
     text-decoration: none;
   }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 // burger menu
@@ -161,7 +164,35 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
+    transition: all 2s ease-in-out;
+  }
+
+  .burger_column div {
+    height: 25px;
+  }
+  .burger_column div a {
+    text-decoration: none;
+    position: relative;
+  }
+  .burger_column div a::after {
+    content: "";
+    display: inline-block;
+
+    height: 1em;
+    width: 100%;
+    border-bottom: 5px solid;
+
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1) translateY(-30px);
+  }
+
+  .burger_column div a:hover::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1) translateY(-35px);
   }
 
   /* Text burger menu */
